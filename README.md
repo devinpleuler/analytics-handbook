@@ -195,13 +195,16 @@ There are lots of different ways to install both `Python` and all these differen
 ##### Resources:
 
 - [`socceraction`](https://github.com/ML-KULeuven/socceraction)
-  > Python library for valuing the individual actions performed by soccer players. Includes an Expected Threat (xT) implementation. From [Tom Decroos](https://twitter.com/TomDecroos) et. al.
+  > A python library for valuing the individual actions performed by soccer players. Includes an Expected Threat (xT) implementation. From [Tom Decroos](https://twitter.com/TomDecroos) et. al.
 
 - [`statsbombpy`](https://github.com/statsbomb/statsbombpy)
   > A python library written by Francisco Goitia to access StatsBomb data.
 
+- [`matplotsoccer`](https://github.com/TomDecroos/matplotsoccer)
+  > A python library for visualising soccer event data. Also by [Tom Decroos](https://twitter.com/TomDecroos).
+
 - [`ggsoccer`](https://github.com/Torvaney/ggsoccer)
-  > Not `Python`, but this soccer visualization library from [Ben Torvaney](https://twitter.com/Torvaney) is great. Could someone write a `Python` one, please?
+  > Not `Python`, but this soccer visualization library from [Ben Torvaney](https://twitter.com/Torvaney) is great.
 
 - [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
   > [Jake VanderPlas](https://twitter.com/jakevdp) made his entire Python Data Science Handbook and accompanying Jupyter notebooks available online. It's a tremendous resource.

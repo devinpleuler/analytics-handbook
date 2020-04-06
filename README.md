@@ -71,22 +71,22 @@ If you're unfamiliar with `Google Colab` (or `Jupyter`), check out this **[intro
 #### Soccer Analytics Tutorials
 
 ###### 1. Data Extraction & Transformation
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/data_extraction_and_transformation.ipynb)
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/data_extraction_and_transformation.ipynb)
 >
 > Parsing raw `StatsBomb` data and storing it in a `Pandas` DataFrame
 
 ###### 2. Linear Regression
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/linear_regression.ipynb)
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/linear_regression.ipynb)
 >
 > Examining the relationship between a player's pass volume and completion percentage
 
 ###### 3. Logistic Regression
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/logistic_regression.ipynb)
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/logistic_regression.ipynb)
 >
 > Predicting the outcome of a shot given its features
 
 ###### 4. Clustering
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/clustering.ipynb)
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/clustering.ipynb)
 >
 > Identifying different types of passes
 

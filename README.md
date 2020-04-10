@@ -206,6 +206,9 @@ There are lots of different ways to install both `Python` and all these differen
 - [`ggsoccer`](https://github.com/Torvaney/ggsoccer)
   > Not `Python`, but this soccer visualization library from [Ben Torvaney](https://twitter.com/Torvaney) is great.
 
+- [StatsBomb JSON-to-CSV tool](https://nr815jz59d.execute-api.eu-west-2.amazonaws.com/sb/)
+  > An easy-to-use tool to convert and download StatsBomb JSON data in CSV format.
+
 - [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
   > [Jake VanderPlas](https://twitter.com/jakevdp) made his entire Python Data Science Handbook and accompanying Jupyter notebooks available online. It's a tremendous resource.
 

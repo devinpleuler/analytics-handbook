@@ -57,6 +57,8 @@ The difference in scale between two data types is enormous. A single game of `Ev
 
 **[StatsBomb](https://twitter.com/StatsBomb)** has provided a large volume of data **"freely available for public use"** via their [Open Data](https://github.com/statsbomb/open-data) repository on Github in order to better serve the analytics community. We will be using this data in some of the tutorials below.
 
+Since the creation of this document, there has been some exciting developments in the world of publicly available data. **[Metrica](https://twitter.com/MetricaSports)** has released [two matches of tracking data](https://github.com/metrica-sports/sample-data), which are the first examples of publicly available tracking data to my knowledge. This is a huge contribution to the soccer analytics community, and I plan on contributing some examples of how to best use tracking data.
+
 ---
 ##### Jupyter Notebooks!
 How could I go so long without mentioning [`Jupyter`](https://jupyter.org/)? That's because it deserves it's own section. I discovered Jupyter only a year-or-two ago, and I've become a much stronger analyst because of it.

@@ -93,7 +93,10 @@ If you're unfamiliar with `Google Colab` (or `Jupyter`), check out this **[intro
 > Identifying different types of passes
 
 ###### 5. Database Population & Querying
-> Coming soon
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/database_population_and_querying.ipynb)
+>
+> Using `Pandas` & `SQLAlchemy` to store and retrieve `StatsBomb` event data
+
 
 ###### 6. XGBoost Classification
 > Coming soon

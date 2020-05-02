@@ -5,15 +5,10 @@ import numpy as np
 base_url = "https://raw.githubusercontent.com/statsbomb/open-data/master/data/"
 
 
-def events_to_pandas(competition_id: int, season_id: int, url=base_url):
+def get_events(competition_id: int, season_id: int, url=base_url):
     """
-    Returns a Pandas DataFrame of all events in a StatsBomb competition_id,
-    season_id combo.
-
-    TODO: Incorporate tactics_lineup, related_events, and shot_freee_frames.
-    TODO: Configure auth for StatsBomb API requests
+    Returns a list of all StatsBomb events in specified competition/season.
     """
-
     comp_url = base_url + "matches/{}/{}.json"
     match_url = base_url + "events/{}.json"
 
@@ -24,6 +19,17 @@ def events_to_pandas(competition_id: int, season_id: int, url=base_url):
     for match_id in match_ids:
         for e in requests.get(url=match_url.format(match_id)).json():
             events.append(e)
+
+    return events
+
+
+def events_to_pandas(events: list):
+    """
+    Returns a Pandas DataFrame of a list of raw StatsBomb Events
+
+    TODO: Incorporate tactics_lineup, related_events, and shot_freee_frames.
+    TODO: Configure auth for StatsBomb API requests
+    """
 
     df = pd.json_normalize(events, sep='_')
 

@@ -4,7 +4,8 @@ import matplotlib.transforms as transforms
 _default_dims = {
     'pen_length': 18, 'pen_width': 44,
     'six_length': 6, 'six_width': 20,
-    'pk_length': 12, 'circle_rad': 10
+    'pk_length': 12, 'circle_rad': 10,
+    'goal_size': 8
 }
 
 _pitch_cosmetics = {
@@ -96,67 +97,86 @@ class Pitch(object):
         rect, circ = patches.Rectangle, patches.Circle
 
         comps = {
-            'border': (rect,
-                       {'xy': (0, 0),
+            'border':
+                (rect, {'xy': (0, 0),
                         'width': self.length,
                         'height': self.width}),
 
-            'left_circle': (circ,
-                            {'xy': (self.pk_length,
-                                    self.width/2),
-                             'radius': self.circle_rad}),
+            'left_circle':
+                (circ, {'xy': (self.pk_length, self.width/2),
+                        'radius': self.circle_rad}),
 
-            'right_circle': (circ,
-                             {'xy': (self.length-self.pk_length,
-                                     self.width/2),
-                              'radius': self.circle_rad}),
+            'right_circle':
+                (circ, {'xy': (self.length-self.pk_length,
+                               self.width/2),
+                        'radius': self.circle_rad}),
 
-            'left_penalty': (rect,
-                             {'xy': (0, (self.width/2)-(self.pen_width/2)),
-                              'width': self.pen_length,
-                              'height': self.pen_width}),
+            'left_penalty':
+                (rect, {'xy': (0, (self.width/2)-(self.pen_width/2)),
+                        'width': self.pen_length,
+                        'height': self.pen_width}),
 
-            'right_penalty': (rect,
-                              {'xy': (self.length,
-                                      (self.width/2)-(self.pen_width/2)),
-                               'width': -self.pen_length,
-                               'height': self.pen_width}),
+            'right_penalty':
+                (rect, {'xy': (self.length,
+                               (self.width/2)-(self.pen_width/2)),
+                        'width': -self.pen_length,
+                        'height': self.pen_width}),
 
-            'left_pk_dot': (circ,
-                            {'xy': (self.pk_length,
-                                    self.width/2),
-                             'radius': 0.5}),
+            'left_pk_dot':
+                (circ, {'xy': (self.pk_length, self.width/2),
+                        'radius': 0.2,
+                        'facecolor': cosmetics['edgecolor']}),
 
-            'right_pk_dot': (circ,
-                             {'xy': (self.length-self.pk_length,
-                                     self.width/2),
-                              'radius': 0.5}),
+            'right_pk_dot':
+                (circ, {'xy': (self.length-self.pk_length,
+                               self.width/2),
+                        'radius': 0.2,
+                        'facecolor': cosmetics['edgecolor']}),
 
-            'left_six': (rect,
-                         {'xy': (0, (self.width/2)-(self.six_width/2)),
-                          'width': self.six_length,
-                          'height': self.six_width}),
+            'left_six':
+                (rect, {'xy': (0, (self.width/2)-(self.six_width/2)),
+                        'width': self.six_length,
+                        'height': self.six_width}),
 
-            'right_six': (rect,
-                          {'xy': (self.length,
-                                  (self.width/2)-(self.six_width/2)),
-                           'width': -self.six_length,
-                           'height': self.six_width}),
+            'right_six':
+                (rect, {'xy': (self.length,
+                               (self.width/2)-(self.six_width/2)),
+                        'width': -self.six_length,
+                        'height': self.six_width}),
 
-            'half_circle': (circ,
-                            {'xy': (self.length/2,
-                                    self.width/2),
-                             'radius': self.circle_rad}),
+            'half_circle':
+                (circ, {'xy': (self.length/2, self.width/2),
+                        'radius': self.circle_rad}),
 
-            'half_line': (rect,
-                          {'xy': (self.length/2, 0),
-                           'width': 0,
-                           'height': self.width}),
+            'half_line':
+                (rect, {'xy': (self.length/2, 0),
+                        'width': 0,
+                        'height': self.width}),
 
-            'half_dot': (circ,
-                         {'xy': (self.length/2,
-                                 self.width/2),
-                          'radius': 0.5}),
+            'half_dot':
+                (circ, {'xy': (self.length/2, self.width/2),
+                        'radius': 0.2,
+                        'facecolor': cosmetics['edgecolor']}),
+
+            'post_left_top':
+                (circ, {'xy': (0, self.width/2 + self.goal_size/2),
+                        'radius': 0.2,
+                        'facecolor': cosmetics['edgecolor']}),
+
+            'post_left_bot':
+                (circ, {'xy': (0, self.width/2 - self.goal_size/2),
+                        'radius': 0.2,
+                        'facecolor': cosmetics['edgecolor']}),
+
+            'post_right_top':
+                (circ, {'xy': (self.length, self.width/2 + self.goal_size/2),
+                        'radius': 0.2,
+                        'facecolor': cosmetics['edgecolor']}),
+
+            'post_right_bot':
+                (circ, {'xy': (self.length, self.width/2 - self.goal_size/2),
+                        'radius': 0.2,
+                        'facecolor': cosmetics['edgecolor']}),
         }
 
         if self.vert:
@@ -167,7 +187,14 @@ class Pitch(object):
                     attrs['height'] = attrs['width']
                     attrs['width'] = new_width
 
-        return [s(**attrs, **cosmetics) for k, (s, attrs) in comps.items()]
+        all_patches = []
+        for k, (s, p_attrs) in comps.items():
+            attrs = {k: v for k, v in cosmetics.items()}
+            for at, v in p_attrs.items():
+                attrs[at] = v
+            all_patches.append(s(**attrs))
+
+        return all_patches
 
     def x_adj(self, x):
         """

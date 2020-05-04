@@ -97,12 +97,14 @@ If you're unfamiliar with `Google Colab` (or `Jupyter`), check out this **[intro
 >
 > Using `Pandas` & `SQLAlchemy` to store and retrieve `StatsBomb` event data
 
+###### 6. Non-Negative Matrix Factorization
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/non_neg_matrix_factorization.ipynb)
+>
+> Using `NNMF` to uncover spatial components of individual player contribution.
 
-###### 6. XGBoost Classification
+###### 7. XGBoost Classification
 > Coming soon
 
-###### 7. Non-Negative Matrix Factorization
-> Coming soon
 
 ###### 8. Convolutional Neural Network
 > Coming soon

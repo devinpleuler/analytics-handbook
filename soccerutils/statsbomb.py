@@ -5,16 +5,35 @@ import numpy as np
 base_url = "https://raw.githubusercontent.com/statsbomb/open-data/master/data/"
 
 
-def get_events(competition_id: int, season_id: int, url=base_url):
+def get_matches(competition_id: int, season_id: int, url=base_url):
     """
-    Returns a list of all StatsBomb events in specified competition/season.
+    Returns a list of all StatsBomb games in specified competition/season.
     """
     comp_url = base_url + "matches/{}/{}.json"
+    return requests.get(url=comp_url.format(competition_id,
+                                            season_id)).json()
+
+
+def get_events(competition_id: int = None,
+               season_id: int = None,
+               match_id: int = None,
+               url=base_url):
+    """
+    Returns a list of all StatsBomb events in specified competition/season
+    or match_id.
+    """
+
+    assert competition_id != match_id,\
+        "Set either (competition_id, season_id) or match_id"
+
     match_url = base_url + "events/{}.json"
 
-    matches = requests.get(url=comp_url.format(competition_id,
-                                               season_id)).json()
-    match_ids = [m['match_id'] for m in matches]
+    if match_id is None:
+        matches = get_matches(competition_id, season_id, base_url)
+        match_ids = [m['match_id'] for m in matches]
+    else:
+        match_ids = [match_id]
+
     events = []
     for match_id in match_ids:
         for e in requests.get(url=match_url.format(match_id)).json():

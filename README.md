@@ -97,16 +97,21 @@ If you're unfamiliar with `Google Colab` (or `Jupyter`), check out this **[intro
 >
 > Using `Pandas` & `SQLAlchemy` to store and retrieve `StatsBomb` event data
 
-###### 6. Non-Negative Matrix Factorization
+###### 7. Data Visualization
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/data_visualization.ipynb)
+>
+> Create a Passing Network from the 2018 Men's World Cup Final
+
+###### 8. Non-Negative Matrix Factorization
 > [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/non_neg_matrix_factorization.ipynb)
 >
 > Using `NNMF` to uncover spatial components of individual player contribution.
 
-###### 7. XGBoost Classification
+###### 9. XGBoost Classification
 > Coming soon
 
 
-###### 8. Convolutional Neural Network
+###### 10. Convolutional Neural Network
 > Coming soon
 
 ---

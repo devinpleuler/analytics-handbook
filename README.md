@@ -107,11 +107,17 @@ If you're unfamiliar with `Google Colab` (or `Jupyter`), check out this **[intro
 >
 > Using `NNMF` to uncover spatial components of individual player contribution.
 
-###### 9. XGBoost Classification
+###### 9. Pitch Dominance
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/pitch_dominance.ipynb)
+>
+> Loading and displaying the `Metrica` sample tracking data, and building a basic pitch dominance model.
+
+
+###### 10. XGBoost Classification
 > Coming soon
 
 
-###### 10. Convolutional Neural Network
+###### 11. Convolutional Neural Network
 > Coming soon
 
 ---

@@ -174,7 +174,7 @@ There are lots of different ways to install both `Python` and all these differen
 
 ---
 ##### Some Favorite Blog Posts
-- **[Assessing	The	Performance	of Premier League Goalscorers](https://www.optasportspro.com/news-analysis/assessing-the-performance-of-premier-league-goalscorers/)** by [Sam Green](https://twitter.com/aSamGreen)
+- **[Assessing	The	Performance	of Premier League Goalscorers](https://opta.kota.co.uk/news-analysis/assessing-the-performance-of-premier-league-goalscorers/)** by [Sam Green](https://twitter.com/aSamGreen)
 - **[Counting Across Borders](https://www.statsperform.com/resource/counting-across-borders/)** by [Ben Torvaney](https://twitter.com/Torvaney)
 - **[Defending Your Patch](https://deepxg.com/2016/02/07/defending-your-patch/)** by [Thom Lawrence](https://twitter.com/lemonwatcher)
 - **[Pass Footedness in the Premier League](https://statsbomb.com/2019/04/pass-footedness-in-the-premier-league/)** by [James Yorke](https://twitter.com/jair1970)

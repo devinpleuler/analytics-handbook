@@ -181,7 +181,7 @@ There are lots of different ways to install both `Python` and all these differen
 - **[Messi Walks Better Than Most Players Run](https://fivethirtyeight.com/features/messi-walks-better-than-most-players-run/)** by [Bobby Gardiner](https://twitter.com/BobbyGardiner)
 - **[Game of Throw-Ins](https://www.americansocceranalysis.com/home/2018/11/27/game-of-throw-ins)** by [Eliot McKinley](https://twitter.com/etmckinley)
 - **[Expected Threat](https://karun.in/blog/expected-threat.html)** by [Karun Singh](https://twitter.com/karun1710)
-- **[Passing Out at the Back](https://www.optasportspro.com/news-analysis/blog-passing-out-at-the-back/)** by [Will Gürpinar-Morgan](https://twitter.com/WillTGM)
+- **[Passing Out at the Back](https://www.statsperform.com/resource/passing-out-at-the-back/)** by [Will Gürpinar-Morgan](https://twitter.com/WillTGM)
 - **[The 10 Commandments of Football Analytics](https://theathletic.co.uk/1692489/2020/03/23/the-10-commandments-of-football-analytics/)** by [Tom Worville](https://twitter.com/Worville)
 - **[Breaking Down Set Pieces ...](https://statsbomb.com/2019/05/breaking-down-set-pieces-picks-packs-stacks-and-more/)** by [Euan Dewar](https://twitter.com/EuanDewar)
 - **[Data Based Coaching: ...](https://www.americansocceranalysis.com/home/2020/3/19/data-based-coaching-how-to-incorporate-data-driven-decisions-into-your-coaching-workflow)** by [Kieran Doyle](https://twitter.com/KierDoyle)

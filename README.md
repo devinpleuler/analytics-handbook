@@ -113,12 +113,11 @@ If you're unfamiliar with `Google Colab` (or `Jupyter`), check out this **[intro
 > Loading and displaying the `Metrica` sample tracking data, and building a basic pitch dominance model.
 
 
-###### 10. XGBoost Classification
-> Coming soon
+###### 10. Convolutional Neural Networks
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/nn_pass_difficulty.ipynb)
+>
+> Building pass difficulty surfaces using a convolutional neural network.
 
-
-###### 11. Convolutional Neural Network
-> Coming soon
 
 ---
 ##### What other skills are worth picking up:

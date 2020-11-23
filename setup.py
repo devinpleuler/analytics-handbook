@@ -5,5 +5,5 @@ setup(
     version='0.2dev',
     packages=['soccerutils', ],
     license='Creative Commons Attribution-Noncommercial-Share Alike license',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', encoding='utf8').read(),
 )

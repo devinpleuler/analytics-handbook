@@ -49,15 +49,26 @@ I'd also suggest [`scikit-learn`](https://scikit-learn.org/stable/) (a.k.a. `skl
 
 First, it's worth explaining what varieties of soccer performance data exist in the wild. Typically, and colloquially, there are two types of data: `Event Data` and `Tracking Data`.
 
+November 2020 Addition: It's probably now worth including `Broadcast Tracking` as a standalone category.
+
 **Event Data** is effectively chronological event-by-event tabulation of on-ball actions. It's typically collected from broadcast footage by third-party collectors and sold on the open market to clubs, broadcasters, the gambling industry, and even private individuals. The primary companies competing in this space are `Opta` (now owned by `STATS Perform`) and `StatsBomb`, but there are other competitors.
 
 **Tracking Data** is an entirely different beast. Player tracking systems record the coordinate position of every player on the field (and usually the ball), many times per second. State-of-the-art systems collect up to 25 samples-per-second. Because these systems are expensive to install and operate, and require in-stadium hardware, this data is mostly available to the clubs themselves, but academics frequently get their hands on this data in a highly anonymized format through tediously painful research agreements. There are various competitors in this space, such as `ChyronHego`, `Second Spectrum`, `STATS Perform`, `Metrica`, `Signality`, and others.
 
 The difference in scale between two data types is enormous. A single game of `Event Data` features around ~2-3 thousand individual events. A single game of `Tracking Data` represents 2+ million individual measurements.
 
+**Broadcast Tracking** is a _new_ variety of data that has rapidly grown in popularity over the last couple years. As the state-of-the-art in computer vision has progressed rapidly, the problem of collecting high-resolution tracking data from broadcast video has become a tractable problem. Obviously what is being collected is not a _complete_ data set, but obviously the most important and relevant areas are captured. The leaders in this space appear to be `SkillCorner` and `Sportlogiq`.
+
+The introduction of `Broadcast Tracking` is particularly interesting for the player recruitment theater. Since access to full-tracking data is typically limited to teams in a single league, it provides scouting departments a more complete picture of players in leagues that their team does not belong to.
+
+
 **[StatsBomb](https://twitter.com/StatsBomb)** has provided a large volume of data **"freely available for public use"** via their [Open Data](https://github.com/statsbomb/open-data) repository on Github in order to better serve the analytics community. We will be using this data in some of the tutorials below.
 
-Since the creation of this document, there has been some exciting developments in the world of publicly available data. **[Metrica](https://twitter.com/MetricaSports)** has released [two matches of tracking data](https://github.com/metrica-sports/sample-data), which are the first examples of publicly available tracking data to my knowledge. This is a huge contribution to the soccer analytics community, and I plan on contributing some examples of how to best use tracking data.
+**[Metrica](https://twitter.com/MetricaSports)** has released [two matches of tracking data](https://github.com/metrica-sports/sample-data), which are the first examples of publicly available tracking data to my knowledge. This is a huge contribution to the soccer analytics community, and I plan on contributing some examples of how to best use tracking data.
+
+**[SkillCorner](https://twitter.com/SkillCorner)** has provided [9 matches of broadcast tracking data](https://github.com/SkillCorner/opendata) into open source.
+
+**[Last Row](https://twitter.com/lastrowview)** ([Ricardo Tavares](https://twitter.com/rjtavares)) has provided some [tracking-like data](https://github.com/Friends-of-Tracking-Data-FoTD/Last-Row) for educational purposes on the [Friends of Tracking](https://www.youtube.com/channel/UCUBFJYcag8j2rm_9HkrrA7w) github.
 
 ---
 ##### Jupyter Notebooks!
@@ -212,6 +223,9 @@ There are lots of different ways to install both `Python` and all these differen
 
 - [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA)
   > This PyCon 2016 talk from [Jake VanderPlas](https://twitter.com/jakevdp) is a great crash course in doing _statistics with for loops_. It really provides a great perspective for those of us without an extensive background in hard statistics. Great speaker, too.
+
+- [Friends of Tracking](https://www.youtube.com/channel/UCUBFJYcag8j2rm_9HkrrA7w/videos)
+  > This whole series, produced by a handful of soccer analytics experts including [David Sumpter](https://twitter.com/Soccermatics), is not-to-miss. It probably the most comprehensive resource out there for getting started in soccer analytics. And it uses `python`!
 
 ---
 ##### Resources:

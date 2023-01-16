@@ -248,6 +248,9 @@ There are lots of different ways to install both `Python` and all these differen
 - [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
   > [Jake VanderPlas](https://twitter.com/jakevdp) made his entire Python Data Science Handbook and accompanying Jupyter notebooks available online. It's a tremendous resource.
 
+- [`itscalledsoccer`](https://github.com/American-Soccer-Analysis/itscalledsoccer)
+  > A python library to access American Soccer Analysis data
+
 ##### Books:
 - [The Numbers Game](https://www.amazon.com/Numbers-Game-Everything-About-Soccer/dp/0143124560) by [Chris Anderson](https://twitter.com/soccerquant) and [David Sally](https://twitter.com/DavidSally6)
 - [Football Hackers](https://www.amazon.com/Football-Hackers-Science-Data-Revolution-ebook/dp/B07NQM3YGK) by [Christoph Biermann](https://twitter.com/chbiermann)

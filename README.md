@@ -2,6 +2,19 @@
 
 [Devin Pleuler](https://twitter.com/devinpleuler) — April 2020
 
+February 2023 Update:
+> It's been almost three years since I originally published this online. I definitely was not expecting 1k+ GitHub stars on the project. Thank you!
+>
+> This is a long-needed update to entirely rework the code samples; linked directly below. There have been various changes in the soccer analytics software ecosystem that have significantly changed what I believe are best practices for working with public soccer data in the python environment. In particular, [`mplsoccer`](https://github.com/andrewRowlinson/mplsoccer) and [`kloppy`](https://github.com/PySport/kloppy) are game-changing. There are also official vendor interfaces (e.g. [`statsbombpy`](https://github.com/statsbomb/statsbombpy)) which make it easier for people to work with their data. More of this please!
+>
+> Instead of separating the code into multiple notebooks, it's now centralized into a single document. It no longer requires an installation of my own custom modules and instead relies entirely on pip-installable packages. The code samples currently utilize `Statsbomb` and `Metrica` open data, who are owed a lot of credit for releasing some of their data for public exploration.
+>
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/soccer_analytics_handbook.ipynb)
+>
+> The code samples are also available within this GitHub repository [here](https://github.com/devinpleuler/analytics-handbook/blob/master/soccer_analytics_handbook.py) – which means that you can propose changes via pull requests and even file issues. My hope is that the handbook continues to gather wider community engagement and contribution.
+---
+
+April 2020 Original:
 > This is probably overdue. I believe that people who have managed to wiggle themselves into dream jobs have a responsibility to help others reach there too. This was written during the depths of social isolation imposed by the COVID-19 pandemic. During this period, I've had an atypically large number of students and career changers reach out to me with questions, and a little extra free time, so I'm finally completing my assigned homework.
 >
 > There are plenty of resources out there that cover some of the more "*how do I get a job in sports analytics*" career-strategy questions out there, like [THIS](https://medium.com/@GregorydSam/getting-into-sports-analytics-ddf0e90c4cce) and [THIS](https://medium.com/@GregorydSam/getting-into-sports-analytics-2-0-129dfb87f5be) from [Sam Gregory](https://twitter.com/GregorydSam). This handbook is more geared at some of the technical skills, concepts, and sports analytics history that I think are worth familiarizing yourself with.
@@ -81,54 +94,7 @@ The notebooks will by hosted on [`Google Colab`](https://colab.research.google.c
 If you're unfamiliar with `Google Colab` (or `Jupyter`), check out this **[introduction video](https://www.youtube.com/watch?v=inN8seMm7UI)**.
 
 ---
-#### Soccer Analytics Tutorials
-
-###### 1. Data Extraction & Transformation
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/data_extraction_and_transformation.ipynb)
->
-> Parsing raw `StatsBomb` data and storing it in a `Pandas` DataFrame
-
-###### 2. Linear Regression
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/linear_regression.ipynb)
->
-> Examining the relationship between a player's pass volume and completion percentage
-
-###### 3. Logistic Regression
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/logistic_regression.ipynb)
->
-> Predicting the outcome of a shot given its features
-
-###### 4. Clustering
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/clustering.ipynb)
->
-> Identifying different types of passes
-
-###### 5. Database Population & Querying
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/database_population_and_querying.ipynb)
->
-> Using `Pandas` & `SQLAlchemy` to store and retrieve `StatsBomb` event data
-
-###### 7. Data Visualization
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/data_visualization.ipynb)
->
-> Create a Passing Network from the 2018 Men's World Cup Final
-
-###### 8. Non-Negative Matrix Factorization
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/non_neg_matrix_factorization.ipynb)
->
-> Using `NNMF` to uncover spatial components of individual player contribution.
-
-###### 9. Pitch Dominance
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/pitch_dominance.ipynb)
->
-> Loading and displaying the `Metrica` sample tracking data, and building a basic pitch dominance model.
-
-
-###### 10. Convolutional Neural Networks
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/notebooks/nn_pass_difficulty.ipynb)
->
-> Building pass difficulty surfaces using a convolutional neural network.
-
+#### Code Samples
 
 ---
 ##### What other skills are worth picking up:

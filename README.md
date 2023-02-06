@@ -11,7 +11,7 @@ February 2023 Update:
 >
 > [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/soccer_analytics_handbook.ipynb)
 >
-> The code samples are also available within this GitHub repository [here](https://github.com/devinpleuler/analytics-handbook/blob/master/soccer_analytics_handbook.py) – which means that you can propose changes via pull requests and even file issues. My hope is that the handbook continues to gather wider community engagement and contribution.
+> The code samples are also available within this GitHub repository [here](https://github.com/devinpleuler/analytics-handbook/blob/master/soccer_analytics_handbook.ipynb) – which means that you can propose changes via pull requests and even file issues. My hope is that the handbook continues to gather wider community engagement and contribution.
 ---
 
 April 2020 Original:

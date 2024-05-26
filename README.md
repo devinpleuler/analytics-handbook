@@ -2,14 +2,14 @@
 
 [Devin Pleuler](https://twitter.com/devinpleuler) — April 2020
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/soccer_analytics_handbook.ipynb)
+
 February 2023 Update:
 > It's been almost three years since I originally published this online. I definitely was not expecting 1k+ GitHub stars on the project. Thank you!
 >
 > This is a long-needed update to entirely rework the code samples; linked directly below. There have been various changes in the soccer analytics software ecosystem that have significantly changed what I believe are best practices for working with public soccer data in the python environment. In particular, [`mplsoccer`](https://github.com/andrewRowlinson/mplsoccer) and [`kloppy`](https://github.com/PySport/kloppy) are game-changing. There are also official vendor interfaces (e.g. [`statsbombpy`](https://github.com/statsbomb/statsbombpy)) which make it easier for people to work with their data. More of this please!
 >
 > Instead of separating the code into multiple notebooks, it's now centralized into a single document. It no longer requires an installation of my own custom modules and instead relies entirely on pip-installable packages. The code samples currently utilize `Statsbomb` and `Metrica` open data, who are owed a lot of credit for releasing some of their data for public exploration.
->
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/devinpleuler/analytics-handbook/blob/master/soccer_analytics_handbook.ipynb)
 >
 > The code samples are also available within this GitHub repository [here](https://github.com/devinpleuler/analytics-handbook/blob/master/soccer_analytics_handbook.ipynb) – which means that you can propose changes via pull requests and even file issues. My hope is that the handbook continues to gather wider community engagement and contribution.
 ---
